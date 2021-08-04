@@ -1,0 +1,302 @@
+:root {
+  --btn-color: #f1c40f;
+  --grey-color: #ddd;
+}
+
+body {
+  background: #eeeeee;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+#header {
+  height: 100px;
+  background: #eeeeee;
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 700px) {
+  #header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header .img-class {
+    width: 30%;
+  }
+
+  #header .list {
+    display: flex;
+    padding: 0;
+  }
+
+  #header .list li {
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  #header .list li a:hover {
+    text-transform: bold;
+    font-weight: 700;
+  }
+}
+
+#main {
+  position: relative;
+  top: 5em;
+}
+
+@media only screen and (min-width: 700px) {
+  #main {
+    top: 0;
+  }
+
+  #main .hero {
+    padding: 0 25em 0 25em;
+    margin-bottom: 40px;
+  }
+}
+
+/* Image size */
+
+.img-class {
+  width: 80%;
+  padding: 0 2em 0 2em;
+}
+
+#header-img {
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+}
+
+.list li {
+  line-height: 2em;
+  font-size: 1.12em;
+}
+
+.list li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+/* ---------------------------------------------------- */
+
+#main .hero {
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5em 2.5em 2.5em;
+}
+
+#email {
+  padding: 1em;
+}
+
+.submit-btn {
+  margin: auto;
+  margin-top: 1.4em;
+  background: var(--btn-color);
+  font-size: 1em;
+  cursor: pointer;
+  max-width: 200px;
+  height: 45px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-btn:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+/*-------------------details section----------------------------------------------------*/
+
+.details {
+  margin: 0;
+  text-align: center;
+  padding: 1.2em;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 700px) {
+  .details {
+    margin-bottom: 40px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details .content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    text-align: justify;
+    width: 50em;
+  }
+
+  .details .content .child-content {
+    width: 100%;
+  }
+}
+
+.details .content {
+  margin-bottom: 1.5em;
+}
+
+.details .content .child-content h2,
+p {
+  margin: 0;
+}
+
+/*-------------------video section----------------------------------------------------*/
+
+.video-section #video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .video-section #video {
+    width: 50%;
+  }
+}
+
+/*-------------------Price section----------------------------------------------------*/
+
+.price-section {
+  text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .price-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .price-section .price-col {
+    height: 50%;
+    margin: 1em;
+  }
+}
+
+.price-section .price-col {
+  height: 350px;
+  border: 1.5px solid black;
+  margin: 2em;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-section .price-col #title {
+  background-color: var(--grey-color);
+}
+
+.price-section .price-col .body {
+  padding: 0 2em 2em 2em;
+  height: 75%;
+  font-size: 1.1em;
+}
+
+.price-section .price-col .title h3 {
+  background-color: #ddd;
+  position: relative;
+  bottom: 17px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-section .price-col .body h3 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.price-section .price-col .body .list {
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .price-section .price-col .body .btn {
+    padding: 0 !important;
+  }
+}
+
+.price-section .price-col .body .btn {
+  border: 0;
+  margin: 5px auto;
+  background-color: #f1c40f;
+  font-weight: 400;
+  height: 40px;
+  font-size: 1em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.price-section .price-col .body .btn:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 100px;
+  padding: 2em 0 0 0;
+  background-color: #ddd;
+}
+
+.footer .foot-details {
+  margin: 0 20px 7px auto;
+  text-align: right;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer p {
+  margin: 0 20px 0 0;
+  text-align: right;
+  font-weight: 500;
+  color: #444;
+}
+
+.footer .foot-details ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.footer .foot-details ul li {
+  margin-right: 10px;
+}
+
+.footer .foot-details ul li a {
+  text-decoration: none;
+  color: black;
+}
